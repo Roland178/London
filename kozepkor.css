@@ -1,0 +1,77 @@
+body{
+    background-color:  #DCF0FF !important;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;              
+    flex-wrap: wrap;    
+    margin-top: 30px;    
+}
+
+
+#carouselExampleIndicators {
+    width: 60%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#carouselExampleIndicators img {
+    width: 100%;
+    height: 400px;  
+    object-fit: cover;  
+}
+
+/* Kisebb képernyőkhöz */
+@media (max-width: 768px) {
+    #carouselExampleIndicators {
+        width: 90%;
+    }
+    #carouselExampleIndicators img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    #carouselExampleIndicators {
+        width: 100%;
+    }
+    #carouselExampleIndicators img {
+        height: 200px;
+    }
+}
+
+
+.p1 {
+    text-align: justify;  
+    font-size: 1.125rem;   
+    width: 100%;            
+    max-width: 800px;      
+    margin: 30px auto 30px auto;  
+    box-sizing: border-box; 
+    padding: 0 10px; 
+    color:#c04040     ;   
+}
+
+
+@media (max-width: 768px) {
+    .p1 {
+        font-size: 1rem;   
+        padding: 0 15px;   
+    }
+}
+
+@media (max-width: 480px) {
+    .p1 {
+        font-size: 0.9375rem; 
+        padding: 0 10px;
+    }
+}
+.card {
+        border: 3px solid black !important;
+}
+
+
+
+
+
