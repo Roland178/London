@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bigben.css">
+    <title>London Nevezetességei</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="">LONDON WEBLAP</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html"><i class="fas fa-info-circle me-2"style="margin-right: 0.1px;"></i> Bevezető</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fas fa-hourglass" style="margin-right: 10px;"></i>Történelme
+          </a>
+          
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Történelme.html">Ókor <i class="fas fa-hourglass-start"></i></a></li>
+            <li><a class="dropdown-item" href="Középkor.html">Középkor <i class="fas fa-hourglass-half"></i></a></li>
+            <li><a class="dropdown-item" href="Újkor.html">Újkor <i class="fas fa-hourglass-end"></i></a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fas fa-eye me-2"></i> Nevezetességei
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Big ben+parla.html"> <i class="fas fa-clock me-1"></i><i class="fas fa-landmark me-2"></i> Big Ben és a Parlament
+            <li><a class="dropdown-item d-flex align-items-center" href="Tower bridge + towerlo.html">
+            <i class="fas fa-landmark me-2"></i><i class="fas fa-archway me-1"></i>
+            Tower of London és a Tower Bridge
+            </a></li>
+
+            <li><a class="dropdown-item" href="Buckingham palace.html"><i class="fas fa-landmark me-2"></i>Buckingham-palace</a></li>
+            <li><a class="dropdown-item" href="London eye.html">  <i class="fas fa-circle me-2"></i> London Eye</a></li>
+          </ul>
+        </li>
+<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fas fa-futbol me-2"></i>Híres focicsapatok Londonban
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Arsenal.html"><i class="fas fa-shield-alt me-2"></i> Arsenal</a></li>
+            <li><a class="dropdown-item" href="Tottenham.html"><i class="fas fa-dove me-2"></i> Tottenham</a></li>
+            <li><a class="dropdown-item" href="Chelsea.html"><i class="fas fa-circle me-2" style="color: #007bff;"></i> Chelsea
+            <li><a class="dropdown-item" href="Westham.html"><i class="fas fa-hammer me-2"></i> West Ham</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<style>
+  /* Alap card stílus minden eszközre */
+  .responsive-card {
+    border: 3px solid black; /* teljes card keret */
+    border-radius: 0.5rem;   /* opcionális lekerekítés */
+    overflow: hidden;        /* kép széle ne lógjon ki */
+  }
+
+  /* Kép jobb oldali szegélye */
+  .card-img-desktop {
+    border-right: 3px solid black;
+  }
+
+  @media (max-width: 991.98px) {
+    .card-img-desktop {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+      border-right: 3px solid black; /* jobb szegély mobilon is */
+    }
+
+    .responsive-card {
+      margin-left: auto !important;
+      margin-right: auto !important;
+      max-width: 700px;
+    }
+
+    .card-body {
+      text-align: center;
+      padding: 2rem 1.5rem;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .responsive-card .row {
+      flex-direction: column !important; /* kép fent, szöveg alatt */
+    }
+
+    .card-img-desktop {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+      border-right: 3px solid black;
+    }
+
+    .card-body {
+      text-align: center;
+      padding: 2rem 1.5rem;
+    }
+
+    .responsive-card {
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .responsive-card {
+      max-width: 1400px;
+      margin-left: 5%;
+      margin-right: auto;
+      margin-bottom: 3rem;
+    }
+
+    .row.flex-md-row {
+      display: flex;
+      align-items: stretch;
+    }
+
+    .card-img-desktop {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      border-right: 3px solid black;
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: start;
+    }
+  }
+
+  .responsive-card:last-of-type {
+    margin-bottom: 5rem;
+  }
+</style>
+
+
+<div class="card mb-3 mt-5 responsive-card">
+  <div class="row g-0 flex-column flex-md-row">
+    <div class="col-md-6">
+      <img src="Bucking.jpg" class="img-fluid rounded-start h-100 card-img-desktop" alt="Buckingham Palace">
+    </div>
+    <div class="col-md-6">
+      <div class="card-body text-center text-md-center text-sm-center">
+        <h5 class="card-title mb-4 fw-bold" style="color: #b8860b;">Buckingham Palace</h5>
+        <ul class="text-start fw-bold" style="line-height: 2.2; margin-bottom: 0; color: #b8860b;">
+          <li><span style="text-decoration: underline;">Hely:</span> London, Egyesült Királyság</li>
+          <li><span style="text-decoration: underline;">Építés éve:</span> 1703 (eredeti épület), 1837-től királyi rezidencia</li>
+          <li><span style="text-decoration: underline;">Stílus:</span> Neoklasszikus</li>
+          <li><span style="text-decoration: underline;">Funkció:</span> A brit királyi család hivatalos rezidenciája</li>
+          <li><span style="text-decoration: underline;">Érdekesség:</span> Híres az őrségváltás ceremóniája, amely turisták kedvelt látványossága</li>
+          <li><span style="text-decoration: underline;">Jellemző:</span> Ikonikus londoni épület, gyakran szerepel filmekben és képeslapokon</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  </body>
+</html>
